@@ -1,0 +1,42 @@
+body {
+  background-color: #F2D8D5;
+}
+h1 {
+  color: #464B59;
+  font-family: Trebuchet MS;
+  font-size: 5vw
+}
+h2 {
+  color: #D98B8B;
+  font-family: Trebuchet MS;
+  font-size: 2vw
+}
+h3{
+  color:#464B59;
+  font-family: Trebuchet MS;
+  font size: 1vw
+}
+ol {
+  color: #8F92A6;
+  font-family: Trebuchet MS;
+  font-size: 1vw
+}
+h4{
+  color:#464B59;
+  font-family: Trebuchet MS;
+  font size: 1vw
+}
+ul {
+  color: #8F92A6;
+  font-family: Trebuchet MS;
+  font-size: 1vw
+}
+h5 {
+  color:#464B59;
+  font-family: Trebuchet MS;
+  font size: 1vw
+}
+img {
+  width: 40vw;
+  margin-left: 20px;
+}
