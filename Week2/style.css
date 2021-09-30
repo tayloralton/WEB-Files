@@ -1,0 +1,31 @@
+body {
+  background-color: #FFE5E2;
+}
+
+h1 {
+  color: #464B59;
+  font-family: Bebas Neue;
+  font-size: 4vw;
+  padding-top: 10px;
+  margin-bottom: 0px
+}
+h2{
+  color: #464B59;
+  font-family: Bebas Neue;
+  font-size: 3vw;
+  margin-top: -1px;
+  margin-bottom: -5px;
+}
+p{
+  color: #737AA7;
+  font-family: PT Sans;
+  font-size: 1vw;
+}
+
+h3{
+  color: #D98B8B;
+  font-family: Bebas Neue;
+  font-size: 3vw;
+  margin-top: -1px;
+  margin-bottom: -5px;
+}
