@@ -1,42 +1,48 @@
 body {
-  background-color: #F2D8D5;
+  background-color: #FFE5E2;
 }
 h1 {
   color: #464B59;
-  font-family: Trebuchet MS;
-  font-size: 5vw
+  font-family: Bebas Neue;
+  font-size: 6vw
 }
 h2 {
   color: #D98B8B;
-  font-family: Trebuchet MS;
+  font-family: Bebas Neue;
   font-size: 2vw
 }
-h3{
-  color:#464B59;
-  font-family: Trebuchet MS;
-  font size: 1vw
+h3, h4, h5{
+  font-family: Bebas Neue;
+  font-size: 2vw;
 }
-ol {
-  color: #8F92A6;
-  font-family: Trebuchet MS;
+
+h3, h4{
+  color:#464B59;
+  margin-bottom: -10px
+}
+ol, ul{
+  color: #737AA7;
+  font-family: PT Sans;
   font-size: 1vw
 }
-h4{
-  color:#464B59;
-  font-family: Trebuchet MS;
-  font size: 1vw
-}
-ul {
-  color: #8F92A6;
-  font-family: Trebuchet MS;
-  font-size: 1vw
-}
+
 h5 {
   color:#464B59;
-  font-family: Trebuchet MS;
-  font size: 1vw
 }
 img {
   width: 40vw;
   margin-left: 20px;
+}
+
+#one, #two, #excited{
+  margin: 2vw;
+}
+
+#two{
+  margin-bottom: -20px;
+}
+
+#header{
+margin-bottom: -60px;
+margin-top: -50px
 }
