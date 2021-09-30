@@ -4,31 +4,25 @@ body {
 h1 {
   color: #464B59;
   font-family: Bebas Neue;
-  font-size: 6vw
+  font-size: 6vw;
 }
 h2 {
   color: #D98B8B;
   font-family: Bebas Neue;
-  font-size: 2vw
+  font-size: 3vw;
 }
 h3, h4, h5{
   font-family: Bebas Neue;
   font-size: 2vw;
-}
-
-h3, h4{
   color:#464B59;
-  margin-bottom: -10px
+  margin-bottom: -10px;
 }
 ol, ul{
   color: #737AA7;
   font-family: PT Sans;
-  font-size: 1vw
+  font-size: 1vw;
 }
 
-h5 {
-  color:#464B59;
-}
 img {
   width: 40vw;
   margin-left: 20px;
@@ -43,6 +37,10 @@ img {
 }
 
 #header{
-margin-bottom: -60px;
-margin-top: -50px
+  margin-bottom: -60px;
+  margin-top: -50px;
+}
+
+#excited{
+  margin-top: -18px;
 }
