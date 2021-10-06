@@ -26,11 +26,14 @@
     document.getElementById("firstbutton").addEventListener("click", buttonOne);
     document.getElementById("secondbutton").addEventListener("click", buttonClicked);
     function buttonOne(){
-      alert("You are a trustworthy person with good music taste:)")
-        }
+      alert("You are a trustworthy person with good music taste:)");
+      document.getElementById("herotext").innerHTML = "Thank you!";
+    }
     function buttonClicked(){
-      alert("You cannot be trusted!")
-        }
+      alert("You cannot be trusted!");
+      document.getElementById("herotext").innerHTML = "Please leave";
+
+    }
   </script>
 </body>
 </html>
