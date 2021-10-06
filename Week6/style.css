@@ -60,6 +60,7 @@ button:active{
 
 button:hover{
   border: solid #464B59 4px;
+  font-size: 34px;
 }
 
 #centerbutton{
