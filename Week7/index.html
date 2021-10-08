@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Taylor Swift Quotes</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <section id="quotesection">
+    <h1 id="qtext">Welcome to the Taylor Swift Quote Machine!</h1>
+    <button id="newquote">New Quote</button>
+  </section>
+
+  <script>
+    const quotes = ["The rest of the world was black and white, but we were in screaming color", "Your faithless love's the only hoax I believe in", "You understand now why they lost their minds and fought the wars. And why I've spent my whole life trying to put it in words", "I had a marvelous time ruining everything", "Please don't ever become a stranger whose laugh I could recognize anywhere", "You drew stars around my scars but now I’m bleeding", "I once believed love would be burning red, but it's golden", "But I took your matches before fire could catch me. So don't look now, I'm shining like fireworks over your sad, empty town", "With every guitar string scar on my hand, I take this magnetic force of a man to be my lover", "You call me up again just to break me like a promise. So casually cruel in the name of being honest"];
+    console.log("java working");
+    let quotecount = 0;
+
+    document.getElementById("newquote").addEventListener("click", buttonClicked);
+
+    function buttonClicked(){
+      console.log(quotes[quotecount]);
+      document.getElementById("qtext").innerHTML = quotes[quotecount];
+      if(quotecount>8){
+        quotecount = 0;
+      }else{
+        quotecount++;
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
