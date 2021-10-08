@@ -1,0 +1,41 @@
+body{
+  background-color: #FFE5E2;
+}
+
+#quotesection{
+  background-color: #737AA7;
+  margin: 30vh 20vw;
+  padding: 8vh 10vw 10vh 10vw;
+  border-radius: 8px;
+}
+
+button{
+  border-radius: 8px;
+  padding: 1vh 3vw;
+  float: right;
+  margin-top: 1vh;
+  background-color: #D9B8B8;
+  color: #464B59;
+  font-family: PT Sans;
+  border: #464B59 solid 1px;
+}
+
+button:hover{
+  border: white solid 2px;
+  color: #FFFFFF;
+}
+
+button:active{
+  color: #464B59;
+  border: #464B59 dashed 2px;
+}
+
+h1{
+  color: #e8eaed;
+  font-family: Bebas Neue;
+}
+
+#qtext{
+  color: white;
+  font-size: 30px;
+}
