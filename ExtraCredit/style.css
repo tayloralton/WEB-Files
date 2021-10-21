@@ -1,0 +1,78 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #FFE5E2;
+}
+
+h1{
+  color: #464B59;
+  font-family: Bebas Neue;
+  font-size: 5vw;
+}
+
+#header, h1{
+  color: #464B59;
+  text-align: center;
+}
+
+#header{
+  background-color: white;
+  margin: 5vh 30vw;
+  /* padding: 1vh 1vw 1vh 1vw; */
+  border-radius: 8px;
+}
+
+.day{
+  color: #464B59;
+  font-family: Bebas Neue;
+  font-size: 2vw;
+  margin-left: 2vw;
+  margin-bottom: 0;
+}
+
+#daytext{
+  margin-bottom: 1px;
+}
+
+button{
+  background-color: #D9B8B8;
+  color: #464B59;
+  border: solid #464B59 2px;
+  font-family: "Bebas Neue";
+  /* font-size: 30px; */
+  margin: 10px;
+  padding: 7px 15px;
+  border-radius: 8px;
+  flex-grow: 1;
+}
+
+button:active{
+  background-color: #737AA7;
+  color: white;
+  border: solid white 4px;
+}
+
+button:hover{
+  border: solid #464B59 4px;
+  /* font-size: 34px; */
+}
+
+h4{
+  font-family: Bebas Neue;
+  font-size: 30px
+  color: #464B59;
+  text-align: center;
+}
+
+p{
+  font-family: PT Sans;
+  font-size: 15px;
+  text-align: center;
+  color: #464B59;
+}
+
+.infoheader{
+  color: #464B59;
+  margin: 0px;
+  padding: 0px;
+}
