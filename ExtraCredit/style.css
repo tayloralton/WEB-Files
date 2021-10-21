@@ -15,13 +15,6 @@ h1{
   text-align: center;
 }
 
-#header{
-  background-color: white;
-  margin: 5vh 30vw;
-  /* padding: 1vh 1vw 1vh 1vw; */
-  border-radius: 8px;
-}
-
 .day{
   color: #464B59;
   font-family: Bebas Neue;
