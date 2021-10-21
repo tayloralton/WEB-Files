@@ -37,7 +37,7 @@ h1{
 button{
   background-color: #D9B8B8;
   color: #464B59;
-  border: solid #464B59 2px;
+  border: solid #464B59 1px;
   font-family: "Bebas Neue";
   /* font-size: 30px; */
   margin: 10px;
@@ -49,11 +49,11 @@ button{
 button:active{
   background-color: #737AA7;
   color: white;
-  border: solid white 4px;
+  border: solid white 2px;
 }
 
 button:hover{
-  border: solid #464B59 4px;
+  border: solid #464B59 2px;
   /* font-size: 34px; */
 }
 
