@@ -1,0 +1,61 @@
+/* need to play with this more */
+
+#tabs{
+  display: flex;
+  margin: 10vh 10vw 0 10vw;
+  /* this is where the flex box for days is on the screen */
+}
+
+#description{
+  display: flex;
+  margin: 0vh 10vw 0 10vw;
+  /* this is where the flex box for the description is on the screen */
+}
+
+.day{
+  flex-grow: 1;
+  width: auto;
+  border: 1px solid black;
+}
+
+#image, .daytab{
+  flex-grow: 1;
+  width: auto;
+  background-color: blue;
+  border: 1px solid black;
+  /* ^take away after you work on the margin/padding */
+  max-width: 50%;
+}
+
+h2{
+  margin-top: 30px;
+  padding-bottom: 0;
+  /* font size */
+}
+
+#mondaytab, #tuesdaytab, #wednesdaytab, #thursdaytab, #fridaytab, #saturdaytab{
+  display: none;
+  /* not shwoing these tabs */
+}
+
+.active{
+  background-color: yellow;
+}
+
+img{
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  /* object-position: 20% 10%; */
+  /* top left right */
+}
+
+#image{
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* margin */
+  /* border */
+}
