@@ -1,4 +1,7 @@
 /* need to play with this more */
+body{
+  background-color: #FFE5E2;
+}
 
 #tabs{
   display: flex;
@@ -15,31 +18,48 @@
 .day{
   flex-grow: 1;
   width: auto;
-  border: 1px solid black;
+  border: 1px solid #737AA7;
+  background-color: #D9B8B8;
 }
 
 #image, .daytab{
   flex-grow: 1;
   width: auto;
-  background-color: blue;
-  border: 1px solid black;
+  background-color: white;
+  border: 1px solid #737AA7;
   /* ^take away after you work on the margin/padding */
   max-width: 50%;
+  border-top: none;
+}
+
+#image{
+  border-right: none;
+}
+
+.daytab{
+  border-left: none;
+
 }
 
 h2{
   margin-top: 30px;
   padding-bottom: 0;
-  /* font size */
+  font-family: Bebas Neue;
+  /* font-size: 36px; */
+  font-size: 2vw;
+  /* margin-left: 30px; */
+  text-align: center;
+  color: #464B59;
 }
 
-#mondaytab, #tuesdaytab, #wednesdaytab, #thursdaytab, #fridaytab, #saturdaytab{
+#Mondaytab, #Tuesdaytab, #Wednesdaytab, #Thursdaytab, #Fridaytab, #Saturdaytab{
   display: none;
-  /* not shwoing these tabs */
 }
 
 .active{
-  background-color: yellow;
+  background-color: white;
+  border-bottom: none;
+  border-color: #737AA7;
 }
 
 img{
@@ -58,4 +78,40 @@ img{
   padding-bottom: 10px;
   /* margin */
   /* border */
+}
+
+h1{
+  font-family: Bebas Neue;
+  font-size: 5vw;
+  text-align: center;
+  color: #464B59;
+}
+
+.daytab{
+  font-family: Bebas Neue;
+  color: #464B59;
+  text-align: center;
+  font-size: 2vw;
+}
+
+button{
+  border-radius: 8px;
+  padding: 1vh 3vw;
+  /* float: right; */
+  margin-top: 1vh;
+  background-color: #D9B8B8;
+  color: #464B59;
+  font-family: Bebas Neue;
+  font-size: 2vw;
+  border: #464B59 solid 1px;
+}
+
+button:hover{
+  border: #464B59 solid 2px;
+  font-weight: 900;
+}
+
+button:active{
+  color: #464B59;
+  border: #464B59 dashed 2px;
 }
