@@ -22,7 +22,7 @@ function setActive(e){
   prevday = document.getElementsByClassName("active")[0].id;
   if(prevday != undefined){
     document.getElementById(prevday).classList.toggle("active");
-    // document.getElementById(prevday + "daytab").style.display = "none";
+    document.getElementById(prevday + 'tab').style.display = "none";
   }
 
   // console.log(e.target.innerHTML);
@@ -37,9 +37,9 @@ function setActive(e){
     // if we click on the h2 or div, it will go the the active id styling in CSS (this makes it so the div and h2 aren't needed to click seperatly)
   }
 
-  newvariable = document.getElementsByClassName('active')[0].id;
-  console.log(newvariable);
-  document.getElementById(newvariable + 'daytab').style.display = "block";
-  document.getElementById('image').innerHTML = "<img src='assets/" + newvariable + ".jpeg' >";
+  currentday = document.getElementsByClassName('active')[0].id;
+  console.log(currentday);
+  document.getElementById(currentday + 'tab').style.display = "block";
+  document.getElementById('image').innerHTML = "<img src='assets/" + currentday + ".jpeg' >";
 
 }
