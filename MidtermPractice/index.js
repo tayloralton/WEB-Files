@@ -13,20 +13,15 @@ for(i=0; i<document.getElementsByClassName('day').length; i++){
   // 21.10 in the youtube video for comment!!! Whenever I do this the days go away (adding the id so we can access it later)
 }
 
-
 document.getElementById("Sunday").classList.toggle('active');
 document.getElementById("image").innerHTML = "<img src= 'assets/" + images[0] +"' >";
 
 function setActive(e){
-
   prevday = document.getElementsByClassName("active")[0].id;
   if(prevday != undefined){
     document.getElementById(prevday).classList.toggle("active");
     document.getElementById(prevday + 'tab').style.display = "none";
   }
-
-  // console.log(e.target.innerHTML);
-  // this could print two different things based on what you click because we are dealing with nested elements (cascade)
 
   if(e.target.tagName == "H2"){
     // if the thing you click on starts with H2, we want you to do something different
@@ -40,6 +35,19 @@ function setActive(e){
   currentday = document.getElementsByClassName('active')[0].id;
   console.log(currentday);
   document.getElementById(currentday + 'tab').style.display = "block";
-  document.getElementById('image').innerHTML = "<img src='assets/" + currentday + ".jpeg' >";
+  document.getElementById('image').innerHTML = "<img src='assets/" + currentday.toLowerCase() + ".jpeg' >";
 
+}
+
+document.getElementById("songbutton").addEventListener("click", buttonClicked);
+
+function buttonClicked(){
+  console.log('javaworking');
+
+  // document.getElementById("qtext").innerHTML = quotes[quotecount];
+  // if(quotecount>8){
+  //   quotecount = 0;
+  // }else{
+  //   quotecount++;
+  // }
 }
