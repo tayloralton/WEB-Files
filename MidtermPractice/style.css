@@ -1,4 +1,3 @@
-/* need to play with this more */
 body{
   background-color: #FFE5E2;
 }
@@ -94,24 +93,11 @@ h1{
   font-size: 2vw;
 }
 
-button{
-  border-radius: 8px;
-  padding: 1vh 3vw;
-  /* float: right; */
-  margin-top: 1vh;
-  background-color: #D9B8B8;
-  color: #464B59;
-  font-family: Bebas Neue;
-  font-size: 2vw;
-  border: #464B59 solid 1px;
+h5{
+
 }
 
-button:hover{
-  border: #464B59 solid 2px;
-  font-weight: 900;
-}
+p{
+  font-family: PT Sans;
 
-button:active{
-  color: #464B59;
-  border: #464B59 dashed 2px;
 }
