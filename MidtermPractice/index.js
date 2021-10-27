@@ -41,13 +41,11 @@ function setActive(e){
 
 document.getElementById("songbutton").addEventListener("click", buttonClicked);
 
-function buttonClicked(){
-  console.log('javaworking');
+var taylorMusic= document.getElementById(currentday.toLowerCase() + "song");
+function play() {
+taylorMusic.play();
+}
 
-  // document.getElementById("qtext").innerHTML = quotes[quotecount];
-  // if(quotecount>8){
-  //   quotecount = 0;
-  // }else{
-  //   quotecount++;
-  // }
+function pause() {
+taylorMusic.pause();
 }
