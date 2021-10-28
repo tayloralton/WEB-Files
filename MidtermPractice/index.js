@@ -38,7 +38,8 @@ function setActive(e){
 
 }
 
-document.getElementById("songbutton").addEventListener("click", buttonClicked);
+currentday = document.getElementsByClassName('active')[0].id;
+// had to add this again because my console kept saying that 'currentday' wasn't defined
 
 var taylorMusic= document.getElementById(currentday.toLowerCase() + "song");
 function play() {
@@ -47,4 +48,32 @@ taylorMusic.play();
 
 function pause() {
 taylorMusic.pause();
+}
+
+const text = document.querySelector('.titletext');
+const strText = text.textContent;
+const splitText = strText.split("");
+
+text.textContent = "";
+
+for(let i=0; i < splitText.length; i++){
+  text.innerHTML += "<span>" + splitText[i] + "</span>";
+}
+
+let char = 0;
+let timer = setInterval(onTick, 50);
+
+function onTick(){
+  const span = text.querySelectorAll('span')[char];
+  span.classList.add('fade');
+  char++
+  if(char === splitText.length){
+    complete();
+    return;
+  }
+}
+
+function complete(){
+  clearInterval(timer);
+  timer = null;
 }
