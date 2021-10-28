@@ -11,7 +11,9 @@ body{
 #description{
   display: flex;
   margin: 0vh 10vw 0 10vw;
+  margin-bottom: 50px;
   /* this is where the flex box for the description is on the screen */
+
 }
 
 .day{
@@ -75,6 +77,7 @@ img{
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
+  /* overflow: hidden; */
   /* margin */
   /* border */
 }
@@ -93,11 +96,21 @@ h1{
   font-size: 2vw;
 }
 
-h5{
+h3{
+  margin: 10px 0 0 0;
+  font-size: 2vw;
+}
 
+h5{
+  margin: 0 0 10px 0;
+  color: #D98B8B;
+  font-size: 3vw;
 }
 
 p{
   font-family: PT Sans;
+}
 
+#filler{
+  display: none;
 }
