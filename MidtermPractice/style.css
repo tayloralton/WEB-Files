@@ -53,7 +53,7 @@ h6{
 
 p{
   font-family: PT Sans;
-  line-height: 2vw;
+  line-height: 5vh;
 }
 
 .lyrics{
@@ -79,7 +79,7 @@ p{
   /* this is where the flex box for the description is on the screen */
 }
 
-#filler{
+.filler{
   display: none;
   /* I am hiding the h2 to avoid getting a warning in the code validator */
 }
@@ -155,7 +155,7 @@ span.fade{
 hr{
   border: 10px solid #D9B8B8;
   opacity: 50%;
-  margin: 0 -10px 0 0;
+  margin: 0 -7px 0 -7px;
   /* adding the horizontal line from my inspriation */
 }
 
