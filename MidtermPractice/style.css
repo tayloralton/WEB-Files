@@ -145,10 +145,13 @@ img{
 }
 
 span{
+  /* starting point for the text animation */
   opacity: 0;
   transition: all 0.4s ease;
 }
 
 span.fade{
+  /* once fade is initiated the title text is visible */
   opacity: 1;
 }
+/* source: https://www.youtube.com/watch?v=GUEB9FogoP8 */
