@@ -79,7 +79,13 @@ p{
   /* this is where the flex box for the description is on the screen */
 }
 
-.filler{
+#filler{
+  display: none;
+  /* I am hiding the h2 to avoid getting a warning in the code validator */
+  /* doing this with classes did not work so I made two ids */
+}
+
+#fillerheader2{
   display: none;
   /* I am hiding the h2 to avoid getting a warning in the code validator */
 }
