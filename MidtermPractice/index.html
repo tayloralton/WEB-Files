@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>TS Self Care Songs</title>
+  <title>TS Song Selector</title>
   <link rel="icon" type="image/png" href="/assets/icon2.png">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap" rel="stylesheet">
@@ -13,6 +13,8 @@
     <h1 class="titletext">Taylor Swift Days of the Week</h1>
   </section>
 
+  <hr>
+
   <section>
     <h4 id="howtotext">Select the day of the week and hear a corresponding song</h4>
   </section>
@@ -21,7 +23,7 @@
     <h2 id="filler">filler header</h2>
     <!-- this h2 is only here to avoid getting a warning about the section not having a header -->
     <div class="day">
-
+      <!-- creating all seven tabs -->
     </div>
 
     <div class="day">
@@ -62,6 +64,7 @@
       <audio controls id="sundaysong" class="songplayer">
         <source src="sunday.mp3" type="audio/mp3">
       </audio>
+      <!-- Source: Oceane helped me with this portion of the audio player -->
 
       <h6>At 1:36:</h6>
       <p class='lyrics'>Morning, his place<br>Burnt toast, Sunday</p>
@@ -75,6 +78,7 @@
       <audio controls id="mondaysong">
         <source src="monday.mp3" type="audio/mp3">
       </audio>
+      <!-- Besides Sunday's audio, they are all 3 min long because of the program I used to download them -->
 
       <h6>At 2:00:</h6>
       <p class='lyrics'>I want your dreary Mondays</br> Wrap your arms around me, baby boy</p>
@@ -144,6 +148,10 @@
 
     </div>
 
+  </section>
+
+  <section id="bottomline">
+    <hr>
   </section>
 
 <script src="index.js"></script>
