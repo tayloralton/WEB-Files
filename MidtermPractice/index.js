@@ -44,13 +44,14 @@ currentday = document.getElementsByClassName('active')[0].id;
 var taylorMusic= document.getElementById(currentday.toLowerCase() + "song");
 function play() {
 taylorMusic.play();
+// this function tells the audio player what song to play based on what day the tab is
 }
 
 function pause() {
 taylorMusic.pause();
+// this function gives the audio player the ability to pause and continue playing
 }
-
-// audio text source:
+// audio player source: https://javascript-tutor.net/index.php/playing-music-using-javascript/
 
 const text = document.querySelector('.titletext');
 const strText = text.textContent;
@@ -59,7 +60,7 @@ const splitText = strText.split("");
 // splitText splits up all the letters so we can go through them individually
 
 text.textContent = "";
-// removes teh h1 before the text
+// removes the h1 before the text
 
 for(let i=0; i < splitText.length; i++){
   text.innerHTML += "<span>" + splitText[i] + "</span>";
@@ -67,6 +68,7 @@ for(let i=0; i < splitText.length; i++){
 }
 
 let char = 0;
+// starting from the beginning of the text
 let timer = setInterval(onTick, 50);
 // creating a time to initiate the animation every 50 miliseconds
 
