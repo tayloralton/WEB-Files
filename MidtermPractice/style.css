@@ -14,9 +14,7 @@ h2{
   margin-top: 30px;
   padding-bottom: 0;
   font-family: Bebas Neue;
-  /* font-size: 36px; */
   font-size: 2vw;
-  /* margin-left: 30px; */
   text-align: center;
   color: #464B59;
 }
@@ -38,7 +36,6 @@ h4{
 
 h5{
   margin: 10px 0 10px 0;
-  /* padding: 40px 0 0 0; */
   color: #D98B8B;
   font-size: 4vw;
   text-align: center;
@@ -66,7 +63,7 @@ p{
 }
 
 .titletext{
-  margin: 50px 0 15px 0;
+  margin: 30px 0 0px 0;
 }
 
 #tabs{
@@ -84,6 +81,11 @@ p{
 
 #filler{
   display: none;
+  /* I am hiding the h2 to avoid getting a warning in the code validator */
+}
+
+#howtotext{
+  padding-top: 30px;
 }
 
 .day{
@@ -98,7 +100,6 @@ p{
   width: auto;
   background-color: white;
   border: 1px solid #737AA7;
-  /* ^take away after you work on the margin/padding */
   max-width: 50%;
   border-top: none;
 }
@@ -123,8 +124,6 @@ img{
   object-fit: cover;
   display: block;
   margin: auto;
-  /* object-position: 20% 10%; */
-  /* top left right */
 }
 
 #image{
@@ -132,9 +131,6 @@ img{
   padding-top: 10px;
   padding-bottom: 10px;
   border-right: none;
-  /* overflow: hidden; */
-  /* margin */
-  /* border */
 }
 
 .daytab{
@@ -154,4 +150,15 @@ span.fade{
   /* once fade is initiated the title text is visible */
   opacity: 1;
 }
-/* source: https://www.youtube.com/watch?v=GUEB9FogoP8 */
+/* animated text source: https://www.youtube.com/watch?v=GUEB9FogoP8 */
+
+hr{
+  border: 10px solid #D9B8B8;
+  opacity: 50%;
+  margin: 0 -10px 0 0;
+  /* adding the horizontal line from my inspriation */
+}
+
+#bottomline{
+  margin-bottom: -10px;
+}
