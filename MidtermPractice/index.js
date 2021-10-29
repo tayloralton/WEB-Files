@@ -50,30 +50,41 @@ function pause() {
 taylorMusic.pause();
 }
 
+// audio text source:
+
 const text = document.querySelector('.titletext');
 const strText = text.textContent;
+// This will animate the title text
 const splitText = strText.split("");
+// splitText splits up all the letters so we can go through them individually
 
 text.textContent = "";
+// removes teh h1 before the text
 
 for(let i=0; i < splitText.length; i++){
   text.innerHTML += "<span>" + splitText[i] + "</span>";
+  // this will apply the span to each individual item in the array
 }
 
 let char = 0;
 let timer = setInterval(onTick, 50);
+// creating a time to initiate the animation every 50 miliseconds
 
 function onTick(){
   const span = text.querySelectorAll('span')[char];
   span.classList.add('fade');
+  // adding the 'fade' effect
   char++
   if(char === splitText.length){
     complete();
     return;
+    // this if statement is stopping the animation once we get to the end of the text
   }
 }
 
 function complete(){
   clearInterval(timer);
   timer = null;
+  // clearing the interval that I made so it doesn't run anymore
 }
+// animated text source: https://www.youtube.com/watch?v=GUEB9FogoP8
