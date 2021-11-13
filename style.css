@@ -2,24 +2,18 @@
   /* page that is bigger than 700 px */
   #contactimg{
     display:block;
-    height: 50%;
   }
 
 }
 
 @media screen and (max-width:701px){
   /* page that is smaller than 700px */
+  #contactimg{
+    display:none;
+  }
 
-  /* #header h1{
-    font-size: 25px;
-  } */
-
-  /* #header h2{
-    font-size: 20px;
-  } */
-
-  ol{
-    margin-top: 2vh;
+  #header{
+    font-color: blue;
   }
 
 }
@@ -32,7 +26,7 @@ body {
 h1 {
   color: #464B59;
   font-family: Bebas Neue;
-  font-size: 12vh;
+  font-size: 13vh;
 }
 
 h2 {
@@ -45,6 +39,10 @@ h3, h4, h5{
   font-size: 2vw;
   color:#D98B8B;
   margin-bottom: -1vh;
+}
+
+h5{
+  text-align: center;
 }
 
 h4{
