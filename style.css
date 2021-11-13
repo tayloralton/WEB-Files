@@ -1,11 +1,40 @@
+@media screen and (min-width:700px){
+  /* page that is bigger than 700 px */
+  #contactimg{
+    display:block;
+    height: 50%;
+  }
+
+}
+
+@media screen and (max-width:701px){
+  /* page that is smaller than 700px */
+
+  #header h1{
+    font-size: 25px;
+  }
+
+  #header h2{
+    font-size: 20px;
+  }
+
+  ol{
+    margin-top: 2vh;
+  }
+
+}
+
 body {
   background-color: #FFE5E2;
+  margin: auto 10vw auto 10vw;
 }
+
 h1 {
   color: #464B59;
   font-family: Bebas Neue;
-  font-size: 6vw;
+  font-size: 6vh;
 }
+
 h2 {
   color: #D98B8B;
   font-family: Bebas Neue;
@@ -15,12 +44,19 @@ h3, h4, h5{
   font-family: Bebas Neue;
   font-size: 2vw;
   color:#464B59;
-  margin-bottom: -10px;
+  margin-bottom: -1vh;
 }
+
+h4{
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
 ol, ul{
   color: #737AA7;
   font-family: PT Sans;
   font-size: 1vw;
+  margin-bottom: 2vh;
 }
 
 #one, #two, #excited, #links{
@@ -28,28 +64,33 @@ ol, ul{
 }
 
 #two{
-  margin-top: -70px;
-  margin-bottom: -20px;
+  margin-top: -5vw;
+  /* margin-bottom: -20px; */
   text-align: center;
 }
 
 #header{
   text-align: center;
-  margin-bottom: -60px;
-  margin-top: -50px;
 }
 
-#excited{
-  margin-top: -18px;
+#contactimg{
+  margin: 0 0 0 0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
-#links{
-  margin-top: -10px;
+#about{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
-.center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40vw;
+#abouttext{
+  margin: 6vh 1vw 6vh 1vw;
+}
+
+#goals{
+  margin-bottom: 0;
 }
