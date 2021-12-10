@@ -363,6 +363,11 @@ footer p{
   animation-duration: 1.5s;
 }
 
+#filler{
+  display: none;
+  /* I am hiding the h2 to avoid getting a warning in the code validator */
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
