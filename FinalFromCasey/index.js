@@ -1,14 +1,5 @@
 console.log('hello!');
 
-// typing animation
-var Typed = new Typed(".typing",{
-  strings: ["Hello!", "Welcome!"],
-  typeSpeed: 80,
-  backSpeed: 100,
-  loop: true
-});
-// source: https://www.youtube.com/watch?v=tcskp-ncN0I&list=WL&index=46&t=5672s
-
 function validation(){
   var name = document.getElementById('name').value;
   var subject = document.getElementById('subject').value;
@@ -54,3 +45,32 @@ function validation(){
 
   return true;
 }
+// source: https://www.youtube.com/watch?v=WY4rvU4ImgE&t=807s
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+// source: https://www.w3schools.com/howto/howto_js_slideshow.asp
