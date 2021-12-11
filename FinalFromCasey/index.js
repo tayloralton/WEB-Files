@@ -14,63 +14,41 @@ function validation(){
     error_message.innerHTML = text;
     return false;
   }
+  // if the length of characters is not at least 3, error message will occur
 
   if(subject.length <7){
     text = "Please Enter Valid Subject";
     error_message.innerHTML = text;
     return false;
   }
+  // if the length of characters is not at least 7, error message will occur
 
   if(isNaN(phone) || phone.length != 10){
     text = "Please Enter Valid Phone Number";
     error_message.innerHTML = text;
     return false;
   }
+  // if the length of characters is not exactly 10, error message will occu
 
   if(email.indexOf("@") == -1 || email.length <6){
     text = "Please Enter Valid Email";
     error_message.innerHTML = text;
     return false;
   }
+  // if the length of characters is not at least 6, error message will occur
+  // the @ is not included
 
   if(message.length <= 140){
     text = "Please Enter More Than 140 Characters";
     error_message.innerHTML = text;
     return false;
   }
+  // // if the length of characters is not equal to or above 140, error message will occu
+
 
   alert("Form Submitted Successfully!")
+  // when submit button is clicked, alert will pop up
 
   return true;
 }
 // source: https://www.youtube.com/watch?v=WY4rvU4ImgE&t=807s
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-console.log;
-// source: https://www.w3schools.com/howto/howto_js_slideshow.asp
