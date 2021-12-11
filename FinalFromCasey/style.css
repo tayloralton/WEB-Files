@@ -1,59 +1,15 @@
-@media screen and (min-width:800px){
-  #contactimg{
-    display:block;
-  }
-
-  #hero h1{
-    font-size: 60px;
-  }
-
-  #portfolio{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "header two"
-    "header three"
-    "four four";
-  }
-}
-
-@media screen and (max-width:801px){
-  #contactimg{
-    display:none;
-  }
-
-  #hero h1{
-    font-size: 30px;
-  }
-
-  #portfolio{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "header"
-    "two"
-    "three"
-    "four";
-  }
-}
-
 body{
   margin: auto 8vw auto 8vw;
   background-color: #E3DCF2;
   padding-bottom: 5vw;
 }
 
-#social img{
-  width:50px;
-  margin: 0px 10px 0px 10px;
-}
-
-#social{
-  display:flex;
-  width: 60%;
-  margin:auto;
-  justify-content: center;
-  flex-grow: 1;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Open Sans;
 }
 
 nav{
@@ -85,7 +41,7 @@ nav a{
   grid-template-columns: repeat(2, 1fr);
   grid-row: 50vh;
   column-gap: 15px;
-  margin: 3vw 0 0 0;
+  margin: 3vw 0 3vw 0;
   padding: 0 0 0 0;
   align-items: center;
 }
@@ -189,12 +145,8 @@ footer p{
   margin-bottom: 80px;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  font-family: Open Sans;
+.slideshow-container img{
+  width: 100%;
 }
 
 .wrapper{
@@ -266,6 +218,7 @@ footer p{
   max-width: 600px;
   position: relative;
   margin: auto;
+  width: 100%;
 }
 
 /* Hide the images by default */
@@ -352,10 +305,6 @@ footer p{
   /* I am hiding the h2 to avoid getting a warning in the code validator */
 }
 
-#resumefooter{
-  text-align: center;
-}
-
 .footericons{
   display: inline-block;
   margin: 2vw 1vh 2vw 1vh;
@@ -393,4 +342,49 @@ footer p{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media screen and (max-width:801px){
+  #aboutme{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row: 50vh;
+    column-gap: 15px;
+    margin: 3vw 0 0 0;
+    padding: 0 0 0 0;
+    align-items: center;
+  }
+
+  #aboutme img{
+    margin: auto;
+    object-fit: cover;
+    max-width:70%;
+    height:auto;
+  }
+
+  #aboutme h4{
+    text-align: center;
+    padding-top: 1vw;
+  }
+
+  #resumeimg{
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+  }
+
+  .resume-heading, .writing-heading, .contact-heading{
+    margin-bottom: 1vh;;
+  }
+
+  nav{
+    margin-bottom: 15px;
+  }
+
+  footer{
+    padding: 2vh 2vw 2vh 2vw;
+  }
 }
