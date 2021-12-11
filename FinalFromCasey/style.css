@@ -119,12 +119,12 @@ h1{
 
 h2{
   font-family: Noticia Text;
-  font-weight: bold;
   font-size: 18px;
 }
 
 #prtext h2{
   text-align: center;
+  margin-top: 1vw;
 }
 
 h3{
@@ -143,6 +143,7 @@ h2, h3{
 p{
   font-family: Open Sans;
   font-size: 15px;
+  color: #494259;
   margin: 15px 0 15px 0;
 }
 
@@ -152,20 +153,11 @@ p{
   color: #4D4D4D;
 }
 
-#aboutme h5{
-  font-family:
-  font-size: 18px;
-}
-
-#about h2{
-  font-size: 40px;
-  padding: 2vh 2vw 0 8vw;
-}
-
 footer{
   background-color: #6D6A75;
   padding: 4vh 2vw 4vh 2vw;
   margin: 0 -8vw 0 -8vw;
+  text-align: center;
 }
 
 footer p{
@@ -173,19 +165,11 @@ footer p{
   color: white;
 }
 
-#about{
-  margin: 0 0 80px 0;
-}
-
 .resume-heading, .writing-heading, .contact-heading{
   margin-bottom: 5vh;
   padding: 0 5vw 0 5vw;
   color: #4D4D4D;
   font-size: 50px;
-}
-
-#aboutmetext{
-  color: #4D4D4D;
 }
 
 .contactmetext{
@@ -366,6 +350,39 @@ footer p{
 #filler{
   display: none;
   /* I am hiding the h2 to avoid getting a warning in the code validator */
+}
+
+#resumefooter{
+  text-align: center;
+}
+
+.footericons{
+  display: inline-block;
+  margin: 2vw 1vh 2vw 1vh;
+}
+
+.fa-instagram{
+  color: white;
+}
+
+.fa-twitter{
+  color: white;
+}
+
+.fa-linkedin{
+  color: white;
+}
+
+.fa-instagram:hover{
+  color: #AE95F4;
+}
+
+.fa-twitter:hover{
+  color: #AE95F4;
+}
+
+.fa-linkedin:hover{
+  color: #AE95F4;
 }
 
 @-webkit-keyframes fade {
