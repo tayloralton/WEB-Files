@@ -11,6 +11,7 @@ body{
   outline: none;
   font-family: Open Sans;
 }
+/* applied to all that don't already have styling */
 
 nav{
   display:flex;
@@ -36,6 +37,7 @@ nav a{
   color: #464B59;
   border-color: #464B59;
 }
+/* used on the nav to indicate what tab you are on */
 
 #aboutme{
   display: grid;
@@ -46,6 +48,7 @@ nav a{
   padding: 0 0 0 0;
   align-items: center;
 }
+/* flex box to put the img and text side by side */
 
 #aboutmetext{
   margin: 1vh 1vw 1vh 1vw;
@@ -117,11 +120,6 @@ footer{
   text-align: center;
 }
 
-footer p{
-  margin: 0 8vw 0 8vw;
-  color: white;
-}
-
 .resume-heading, .writing-heading, .contact-heading{
   margin-bottom: 5vh;
   padding: 0 5vw 0 5vw;
@@ -149,6 +147,7 @@ footer p{
 .slideshow-container img{
   width: 100%;
 }
+/* parent to the slideshow */
 
 .wrapper{
   margin: auto;
@@ -161,6 +160,7 @@ footer p{
   box-shadow: 4px 4px 2px #AE95F4;
   margin-bottom: 20px;
 }
+/* contact form */
 
 .wrapper h6{
   text-align: center;
@@ -170,6 +170,7 @@ footer p{
   color: #574973;
   font-size: 20px;
 }
+/* text at the top of the contact form */
 
 .wrapper .input_field{
   margin-bottom: 10px;
@@ -200,6 +201,7 @@ footer p{
   border-radius: 25px;
   cursor: pointer;
 }
+/* submit button */
 
 .wrapper #error_message{
   margin-bottom: 20px;
@@ -210,10 +212,6 @@ footer p{
   transition: all 0.5s ease;
 }
 
-/* START */
-
-/* * {box-sizing:border-box} */
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 600px;
@@ -222,12 +220,11 @@ footer p{
   width: 100%;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
+/* Hide the images in slideshow by default */
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -243,20 +240,20 @@ footer p{
   user-select: none;
   background-color: #BBADD9;
 }
+/* Next & previous buttons */
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+/* Position the "next button" to the right */
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: #574973;
   color: #E3DCF2;
 }
+/* On hover, add a black background color with a little bit see-through */
 
-/* Caption text */
 .text {
   color: #4D4D4D;
   font-size: 20px;
@@ -266,8 +263,8 @@ footer p{
   width: 100%;
   text-align: center;
 }
+/* Caption text */
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #494259;
   font-size: 15px;
@@ -275,8 +272,8 @@ footer p{
   position: absolute;
   top: 0;
 }
+/* Number text (1/3 etc) */
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -288,22 +285,23 @@ footer p{
   transition: background-color 0.6s ease;
   margin-bottom: 10vh;
 }
+/* The dots/bullets/indicators */
 
 .dot:hover {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
+/* Fading animation */
 
 #filler{
   display: none;
-  /* I am hiding the h2 to avoid getting a warning in the code validator */
+  /* I am hiding the h2 to avoid getting a warning in the code validator that my section doesn't have a heading*/
 }
 
 .footericons{
@@ -344,6 +342,8 @@ footer p{
   from {opacity: .4}
   to {opacity: 1}
 }
+/* used for slideshow */
+
 
 @media screen and (max-width:801px){
   #aboutme{
@@ -388,4 +388,5 @@ footer p{
   footer{
     padding: 2vh 2vw 2vh 2vw;
   }
+  /* adjusting the space etc. for smaller screens */
 }
