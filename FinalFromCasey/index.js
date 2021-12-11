@@ -1,5 +1,3 @@
-console.log('hello!');
-
 function validation(){
   var name = document.getElementById('name').value;
   var subject = document.getElementById('subject').value;
@@ -73,4 +71,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+console.log;
 // source: https://www.w3schools.com/howto/howto_js_slideshow.asp
